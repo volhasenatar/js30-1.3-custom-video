@@ -1,0 +1,92 @@
+body {
+  background-color: black;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.section-title {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  font-family: 'Merriweather', serif;
+  font-size: 40px;
+  color: #bdae82;
+  margin: 20px auto;
+  background-image: linear-gradient(
+    to top,
+    #000 39px,
+    #bdae82 39px,
+    #bdae82 41px,
+    #000 41px
+  );
+}
+.section-title span {
+  background-color: #000;
+  padding: 20px;
+}
+.main {
+  border: #bdae82 2px solid;
+}
+.main .view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+video {
+  width: 100%;
+}
+.play-btn {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  background-image: url(svg/play-btn.svg);
+}
+.controls {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60px;
+}
+.icon {
+  width: 40px;
+  height: 36px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.play {
+  background-image: url(svg/play.svg);
+}
+.pause {
+  background-image: url(svg/pause.svg);
+}
+.progress-bar {
+  width: 80%;
+}
+.volume {
+  background-image: url(svg/volume.svg);
+}
+.mute {
+  background-image: url(svg/mute.svg);
+}
+.progress-volume {
+  width: 10%;
+}
+input[type='range'] {
+  -webkit-appearance: none;
+  height: 5px;
+}
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #bdae82;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
